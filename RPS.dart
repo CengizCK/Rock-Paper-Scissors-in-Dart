@@ -5,6 +5,7 @@ void main() {
 
   while (true) {
   print("Welcome");
+  print("If you want to quit game write the Q");
   var u_score=0;
   var pc_score=0;
   var pc_move="";
@@ -14,7 +15,6 @@ void main() {
   Random r=new Random();
   int number=r.nextInt(3);  
   print("Write your choice(Rock,Paper or Sciccors):");
-  print("If you want to quit game write the Q");
   u_move=stdin.readLineSync() ?? "";
   u_move=u_move.toLowerCase();
   if (u_move=="q") {
